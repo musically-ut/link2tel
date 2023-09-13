@@ -7,12 +7,16 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link rel="favicon" href="favicon.ico" />
     <title>Link2Tel</title>
   </head>
   <body class="bg-light">
     <div class="container py-5">
       <div class="text-center mb-4">
-        <h1 class="display-4">Link2Tel</h1>
+        <h1 class="display-4">
+          <img src="img/logo.png" alt="Link2Tel" class="me-2" height="96px" />
+          Link2Tel
+        </h1>
         <p class="lead">
           Link2Tel is a simple web application that allows you to create a link
           to a phone call.
@@ -38,6 +42,24 @@
         </div>
       </div>
       <div class="text-center mt-4">
+        <p>
+          I created this application because
+          <a
+            href="https://support.google.com/docs/thread/176548188/how-do-i-make-phone-numbers-clickable-on-google-sheets-clickable-on-my-mobile-phone?hl=en"
+          >
+            Google Sheets does not support clickable phone numbers in cells.
+          </a>
+        </p>
+        <p>
+          Now, you can create a link to a phone call and paste it in your cell
+          as:
+        </p>
+        <p>
+          <code>
+            =HYPERLINK( "https://link2tel.musicallyut.xyz/?tel=1234567890",
+            "Call" )
+          </code>
+        </p>
         <p>
           For more information, please contact
           <a href="mailto:mail@musicallyut.xyz" class="text-decoration-none"
